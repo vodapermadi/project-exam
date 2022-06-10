@@ -24,7 +24,7 @@ const Home = () => {
                 </Link>
               </p>
             </div>
-            <div className="col-md-3 text-center p-5 bgTask m-1">
+            <div className="col-md-3 containerAnimation shadow m-1">
               <p>
                 <Animated />
               </p>
