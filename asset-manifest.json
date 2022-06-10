@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/project-exam/static/css/main.1c7912b8.css",
+    "main.js": "/project-exam/static/js/main.003822ad.js",
+    "index.html": "/project-exam/index.html",
+    "main.1c7912b8.css.map": "/project-exam/static/css/main.1c7912b8.css.map",
+    "main.003822ad.js.map": "/project-exam/static/js/main.003822ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c7912b8.css",
+    "static/js/main.003822ad.js"
+  ]
+}
