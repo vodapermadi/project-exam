@@ -16,7 +16,7 @@ const Home = () => {
                   emergence <br /> of this website
                 </h4>
                 <Link
-                  to={`mini-project/todolist`}
+                  to={`/mini-project/todolist`}
                   className="btn btn-primary px-4 py-2 mt-4"
                   style={{ borderRadius: "15px" }}
                 >

@@ -9,7 +9,7 @@ function App() {
     <div id="mainBackground">
       <Router>
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/project-exam" element={<Home/>} />
           <Route path="/mini-project/todolist" element={<CardComponent/>} />
         </Routes>
       </Router>

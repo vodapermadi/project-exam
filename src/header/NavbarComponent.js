@@ -11,8 +11,8 @@ const NavbarComponent = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Link to={`/`} className="nav-link fs-5 text-white">Home</Link>
-                            <Nav.Link href="#todolist" className="fs-5 text-white">Todolist</Nav.Link>
+                            <Link to={`/project-exam`} className="nav-link fs-5 text-white">Home</Link>
+                            <Link to={`/mini-project/todolist`} className="nav-link fs-5 text-white">Todolist</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
