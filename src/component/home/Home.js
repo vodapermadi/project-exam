@@ -32,7 +32,7 @@ const Home = () => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-5 bgTask containerAnimation m-1">
+            <div className="col-md-5 bgTask containerAnimation m-1 p-4">
               <Animated2/>
             </div>
             <div className="col-md-6 m-1 bgTask text-center py-4 px-3">

@@ -13,6 +13,7 @@ const NavbarComponent = () => {
                         <Nav className="mx-auto">
                             <Link to={`/project-exam`} className="nav-link fs-5 text-white">Home</Link>
                             <Link to={`/mini-project/todolist`} className="nav-link fs-5 text-white">Todolist</Link>
+                            <Link to={`/mini-game`} className="nav-link fs-5 text-white">MiniGame</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

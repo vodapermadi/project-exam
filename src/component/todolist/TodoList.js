@@ -1,14 +1,22 @@
 import React, { useState } from "react";
-import data from "../../db/data.json"
+// import data from "../../db/data.json"
 import Task from "./Task";
 
 const TodoList = () => {
   const [task, setTask] = useState("");
   const [time, setTime] = useState("");
-  const [list, setList] = useState(data);
+  const [list, setList] = useState([]);
+
+  // const addTask = () => {
+  //   let copy = [...list]
+  //   copy = [...copy,{id : list.length + 1 , task : task , time : time , complete : false}]
+  //   setList(copy);
+  // };
 
   const addTask = () => {
-    setList([...list,{id : list.length + 1 ,task : task,time : time,complete : false}]);
+    let copy = [...list]
+    copy = [...copy,{id : list.length + 1 , task : task , time : time , complete : false}]
+    setList(copy);
   };
 
   const handleSubmit = (e) => {
@@ -16,6 +24,23 @@ const TodoList = () => {
     addTask(task,time)
     setTask("")
     setTime("")
+    alert('add to do list successfuly')
+  }
+
+  const handleComplete = (id) => {
+    let mapped = list.map(li => {
+      return li.id === Number(id) ? {...li, complete : !li.complete} : {...li}
+    })
+    setList(mapped)
+  }
+
+  const deleteItem = (id) => {
+
+    if( window.confirm("yakin deck??") ){
+      const newArray = list.filter(todos => todos.id !== id)
+      setList(newArray)
+    }
+
   }
 
   return (
@@ -59,7 +84,7 @@ const TodoList = () => {
       </div>
       <div className="container mt-3 py-3">
         {list.map((li) => {
-          return <Task todo={li.id} task={li.task} time={li.time} complete={li.complete} />;
+          return <Task todo={li} handleComplete={handleComplete} deleteItem={deleteItem} />;
         })}
       </div>
     </>
