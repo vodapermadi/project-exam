@@ -1,76 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Varela+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Varela+Round&display=swap");
 
-.navbar{
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    font-family: "Dosis",sans-serif;
+.navbar {
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  font-family: "Dosis", sans-serif;
 }
 
-#mainBackground{
-    background: radial-gradient(circle, rgba(255,128,154,1) 0%, rgba(132,153,255,1) 100%);
-    font-family: "Dosis",sans-serif;
+#mainBackground {
+  background: radial-gradient(
+    circle,
+    rgba(255, 128, 154, 1) 0%,
+    rgba(132, 153, 255, 1) 100%
+  );
+  font-family: "Dosis", sans-serif;
 }
 
 .btnCustom {
-    padding: 10px;
-    outline: 2px solid rgb(46, 71, 200);
-    color:rgb(60, 60, 60);
+  padding: 10px;
+  outline: 2px solid rgb(46, 71, 200);
+  color: rgb(60, 60, 60);
 }
 
 .btnCustom:hover {
-    outline: 2px solid rgb(34, 56, 170);
-    background-color: rgba(0, 0, 0, 0.1);
+  outline: 2px solid rgb(34, 56, 170);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .bgTask {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    color: rgb(225, 225, 225);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  color: rgb(225, 225, 225);
 }
 
 /* container animation */
 
 .containerAnimation {
-    display: flex;
-    padding: 10px 10px 10px 10px;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 
 /* Animated */
 
 .loader-wrapper {
-    width: 250px;
-    height: 200px;
+  width: 250px;
+  height: 200px;
 }
 
 .loader {
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border: 10px solid #0F4C75;
-    border-top-color: #3282B8;
-    border-bottom-color: #3282B8;
-    border-radius: 50%;
-    animation : rotate 9s linear infinite;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 10px solid #0f4c75;
+  border-top-color: #3282b8;
+  border-bottom-color: #3282b8;
+  border-radius: 50%;
+  animation: rotate 9s linear infinite;
 }
 
 .loader-inner {
-    border-top-color: black;
-    border-bottom-color: black;
-    animation-duration: 9s;
+  border-top-color: black;
+  border-bottom-color: black;
+  animation-duration: 9s;
 }
 
 @keyframes rotate {
-    0% {
-        transform: scale(1) rotate(360deg);
-    }
-    50% {
-        transform: scale(.8) rotate(-360deg);
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-    }
+  0% {
+    transform: scale(1) rotate(360deg);
+  }
+  50% {
+    transform: scale(0.8) rotate(-360deg);
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }
 
+/* animated img */
+
+.img-wrapper {
+  max-width: 200px;
+  position: relative;
+}
+
+.img-wrapper img {
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 6px solid rgba(0, 0, 0, 0.2);
+  border-top-color: white;
+  border-bottom-color: black;
+  border-radius: 50%;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

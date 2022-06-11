@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Animated from "../animated/Animated";
+import Animated2 from "../animated/Animated2";
 
 const Home = () => {
   return (
@@ -31,14 +32,17 @@ const Home = () => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-md-5 m-1 bgTask text-center py-4 px-3">
+            <div className="col-md-5 bgTask containerAnimation m-1">
+              <Animated2/>
+            </div>
+            <div className="col-md-6 m-1 bgTask text-center py-4 px-3">
               <p>
                 <h1 className="pb-4">Introduce My Self</h1>
                 <h4>
                   I am philipus voda permadi, <br /> 16 years old and currently
                   in the
-                  <br /> 2nd grade of SMK. My hobby is listening to music,and{" "}
-                  <br /> my favorite music is the album from justine bieber{" "}
+                  <br /> 2nd grade of SMK. My hobby is listening <br /> to music,and{" "}
+                  my favorite <br /> music is the album from <br /> justine bieber{" "}
                 </h4>
               </p>
             </div>
