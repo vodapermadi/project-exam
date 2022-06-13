@@ -5,9 +5,9 @@ const Animated = () => {
     <>
       <div className="loader-wrapper">
         <div className="loader">
-          <div className="loader loader-inner">
-            <div className="loader loader-inner">
-              <div className="loader loader-inner"></div>
+          <div className="loader loader-inner1">
+            <div className="loader loader-inner2">
+              <div className="loader loader-inner3"></div>
             </div>
           </div>
         </div>

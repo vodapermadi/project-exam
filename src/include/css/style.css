@@ -1,32 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@700&family=Varela+Round&display=swap");
 
+* {
+  font-family: "Dosis",sans-serif;
+}
+
 .navbar {
-  background: radial-gradient(
-    circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
-  );
-  font-family: "Dosis", sans-serif;
+  background: radial-gradient(circle, rgba(36,58,255,1) 0%, rgba(34,34,34,1) 90%);
 }
 
 #mainBackground {
-  background: radial-gradient(
-    circle,
-    rgba(255, 128, 154, 1) 0%,
-    rgba(132, 153, 255, 1) 100%
-  );
-  font-family: "Dosis", sans-serif;
+  background: radial-gradient(circle, rgba(36,58,255,1) 27%, rgba(34,34,34,1) 75%);
 }
 
 .btnCustom {
-  padding: 10px;
-  outline: 2px solid rgb(46, 71, 200);
+  padding: 5px 20px ;
+  border-radius: 10px;
+  /* outline: 1px solid rgb(46, 71, 200); */
+  outline: none;
   color: rgb(60, 60, 60);
+  transition: 0.4s;
 }
 
 .btnCustom:hover {
-  outline: 2px solid rgb(34, 56, 170);
-  background-color: rgba(0, 0, 0, 0.1);
+  /* outline: 1px solid white; */
+  outline: none;
+  color: white;
+  background-color: rgba(36,58,255,1);
+}
+
+.btnCustom:active {
+  /* outline: 1px solid white; */
+  outline: none;
+  color: white;
+  background-color: rgba(36,58,255,1);
 }
 
 .bgTask {
@@ -49,25 +55,38 @@
 /* Animated */
 
 .loader-wrapper {
+  display : flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   height: 200px;
 }
 
 .loader {
   box-sizing: border-box;
-  width: 80%;
-  height: 80%;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
   border: 10px solid rgba(0, 0, 0, 0.6);
   border-top-color: black;
   border-bottom-color: white;
   border-radius: 50%;
-  animation: rotate 3s linear infinite;
+  animation: rotate 8s linear infinite;
 }
 
-.loader-inner {
+.loader-inner1, .loader-inner2, .loader-inner3 {
   border-top-color: black;
   border-bottom-color: white;
-  animation-duration: 3s;
+}
+
+.loader-inner1{
+  animation-duration: 7s;
+}
+.loader-inner2{
+  animation-duration: 6s;
+}
+.loader-inner3{
+  animation-duration: 5s;
 }
 
 @keyframes rotate {
@@ -93,8 +112,8 @@
 .img-wrapper::before {
   content: "";
   position: absolute;
-  inset: -15px;
-  border: 6px solid rgba(0, 0, 0, 0.2);
+  inset: -20px;
+  border: 10px solid rgba(0, 0, 0, 0.2);
   border-top-color: white;
   border-bottom-color: black;
   border-radius: 50%;

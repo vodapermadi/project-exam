@@ -47,7 +47,7 @@ const TodoList = () => {
     <>
       <div className="container mt-2">
         <div>
-          <h1>Todo App</h1>
+          <h1 className="text-white">Todo App</h1>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
@@ -75,7 +75,7 @@ const TodoList = () => {
             />
           </div>
           <button
-            className="btn py-1 px-3 fs-5 d-flex btnCustom"
+            className="fs-5 d-flex btnCustom"
             type="submit"
           >
             Add

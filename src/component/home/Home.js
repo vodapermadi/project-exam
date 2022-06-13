@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className="d-flex justify-content-center items-center py-5">
-        <div className="container py-5 px-4">
+        <div className="container py-3 px-4">
           <div className="row justify-content-center mb-4">
             <div className="col-md-8 m-1 text-center text-white bgTask py-4 px-3">
               <p>
@@ -18,10 +18,10 @@ const Home = () => {
                 </h4>
                 <Link
                   to={`/mini-project/todolist`}
-                  className="btn btn-primary px-4 py-2 mt-4"
+                  className="btn btn-outline-primary px-4 py-2 mt-4"
                   style={{ borderRadius: "15px" }}
                 >
-                  <h4>Get Started</h4>
+                  <h4 className="text-white">Get Started</h4>
                 </Link>
               </p>
             </div>
