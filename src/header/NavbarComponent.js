@@ -5,15 +5,15 @@ import { Link } from "react-router-dom"
 const NavbarComponent = () => {
     return (
         <>
-            <Navbar className="shadow py-3 fixed-top" expand="lg">
+            <Navbar className="shadow py-3" expand="lg">
                 <Container>
                     <Navbar.Brand href="#home" className="fs-4 text-white">MiniProject</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color:"white" }} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
                             <Link to={`/project-exam`} className="nav-link fs-5 text-white">Home</Link>
-                            <Link to={`/mini-project/todolist`} className="nav-link fs-5 text-white">Todolist</Link>
-                            <Link to={`/mini-game`} className="nav-link fs-5 text-white">MiniGame</Link>
+                            <Link to={`/tools/menu`} className="nav-link fs-5 text-white">Tools</Link>
+                            <Link to={`/mini-game/menu`} className="nav-link fs-5 text-white">Mini Game</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

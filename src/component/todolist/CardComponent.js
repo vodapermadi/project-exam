@@ -7,7 +7,7 @@ const CardComponent = () => {
   return (
     <>
     <NavbarComponent/>
-      <div className="text-center py-5 px-4" id='todolist'>
+      <div className="text-center px-4" id='todolist'>
         <div className="container py-5">
           <div className="row justify-content-center">
             <div className="col-md-7 bgTask my-3">

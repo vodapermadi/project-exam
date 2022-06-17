@@ -4,11 +4,11 @@ import voda from "./vodapermadi.png"
 const Animated2 = () => {
   return (
     <>
+    <div className='d-flex justify-content-center items-center py-2'>
       <div className='img-wrapper'>
-        <div className='img-wrapper2'>
           <img src={voda} alt="voda permadi" />
-        </div>
       </div>
+    </div>
     </>
   )
 }

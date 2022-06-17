@@ -15,7 +15,7 @@ const TodoList = () => {
 
   const addTask = () => {
     let copy = [...list]
-    copy = [...copy,{id : list.length + 1 , task : task , time : time , complete : false}]
+    copy = [...copy,{id : list.length + 1 , task : task , time : time }]
     setList(copy);
   };
 
@@ -25,13 +25,6 @@ const TodoList = () => {
     setTask("")
     setTime("")
     alert('add to do list successfuly')
-  }
-
-  const handleComplete = (id) => {
-    let mapped = list.map(li => {
-      return li.id === Number(id) ? {...li, complete : !li.complete} : {...li}
-    })
-    setList(mapped)
   }
 
   const deleteItem = (id) => {
@@ -84,7 +77,7 @@ const TodoList = () => {
       </div>
       <div className="container mt-3 py-3">
         {list.map((li) => {
-          return <Task todo={li} handleComplete={handleComplete} deleteItem={deleteItem} />;
+          return <Task todo={li} deleteItem={deleteItem} />;
         })}
       </div>
     </>
