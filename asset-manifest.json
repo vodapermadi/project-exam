@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/project-exam/static/css/main.370d1a03.css",
-    "main.js": "/project-exam/static/js/main.f667c03a.js",
+    "main.css": "/project-exam/static/css/main.661d3c20.css",
+    "main.js": "/project-exam/static/js/main.9efc3a0c.js",
     "static/media/vodapermadi.png": "/project-exam/static/media/vodapermadi.7973b00add7aa79ff233.png",
     "index.html": "/project-exam/index.html",
-    "main.370d1a03.css.map": "/project-exam/static/css/main.370d1a03.css.map",
-    "main.f667c03a.js.map": "/project-exam/static/js/main.f667c03a.js.map"
+    "main.661d3c20.css.map": "/project-exam/static/css/main.661d3c20.css.map",
+    "main.9efc3a0c.js.map": "/project-exam/static/js/main.9efc3a0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.370d1a03.css",
-    "static/js/main.f667c03a.js"
+    "static/css/main.661d3c20.css",
+    "static/js/main.9efc3a0c.js"
   ]
 }
